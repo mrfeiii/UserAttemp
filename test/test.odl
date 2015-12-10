@@ -1,0 +1,42 @@
+// test.odl : type library source for test.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (test.tlb).
+
+[ uuid(B1C031A9-ECDE-4C56-BDA3-67DE84B7155C), version(1.0) ]
+library Test
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for CTestDoc
+	
+	[ uuid(8F0617DF-57C0-499C-B332-9A481F0FE9C5) ]
+	dispinterface ITest
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CTestDlgAutoProxy)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CTestDlgAutoProxy)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CTestDoc
+	
+	[ uuid(7F29BC88-1351-4E50-AAC6-D12AE21DE75A) ]
+	coclass Test
+	{
+		[default] dispinterface ITest;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};
